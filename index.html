@@ -9,18 +9,45 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0b0b0f;
+  background: radial-gradient(circle at top, #151522, #0b0b0f);
   color: #fff;
+  scroll-behavior: smooth;
 }
 
+/* NAV */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(10,10,15,0.7);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  z-index: 1000;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+nav a:hover {
+  opacity: 1;
+  color: #00ffd5;
+}
+
+/* HEADER */
 header {
   text-align: center;
-  padding: 80px 20px;
-  background: radial-gradient(circle at top, #1a1a2e, #000);
+  padding: 140px 20px 80px;
 }
 
 h1 {
-  font-size: 44px;
+  font-size: 52px;
   margin: 0;
 }
 
@@ -29,50 +56,72 @@ h1 {
   margin-top: 10px;
 }
 
+/* SECTIONS */
 section {
   max-width: 1000px;
   margin: auto;
-  padding: 50px 20px;
+  padding: 80px 20px;
 }
 
 h2 {
   border-left: 4px solid #00ffd5;
-  padding-left: 10px;
-  margin-bottom: 20px;
+  padding-left: 12px;
+  margin-bottom: 25px;
 }
 
+/* CARDS */
 .card {
-  background: #141420;
+  background: rgba(20,20,30,0.7);
+  border: 1px solid rgba(255,255,255,0.05);
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 14px;
   margin-bottom: 20px;
+  backdrop-filter: blur(6px);
+  transition: 0.3s;
 }
 
+.card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0,255,213,0.3);
+}
+
+/* SOUND CLOUD */
 iframe {
   width: 100%;
   height: 166px;
   border-radius: 10px;
+  margin-top: 10px;
 }
 
+/* SKILLS */
 .skills span {
   display: inline-block;
-  background: #1f1f2e;
+  background: rgba(255,255,255,0.06);
   padding: 8px 12px;
   margin: 5px;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
+/* IMAGES */
 img {
   width: 100%;
   border-radius: 10px;
   margin-top: 10px;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
-  padding: 30px;
+  padding: 40px;
   opacity: 0.5;
+}
+  img {
+  max-width: 100%;
+  height: auto;
+}
+  html {
+  scroll-behavior: smooth;
 }
 </style>
 
@@ -80,91 +129,117 @@ footer {
 
 <body>
 
+<nav>
+  <a href="#about">About</a>
+  <a href="#music">Music</a>
+  <a href="#sound">Sound Design</a>
+  <a href="#workspace">Workspace</a>
+  <a href="#contact">Contact</a>
+</nav>
+
 <header>
-  <h1>YOUR NAME</h1>
-  <p class="subtitle">Audio Producer • Sound Designer • Ableton Live Specialist</p>
+  <h1>Norton Silva aka ANTIVIRUS LIVE</h1>
+<p style="opacity:0.6;">
+Available for Remote Audio AI Training • Sound Design • Music Production
+</p>
+  <p class="subtitle">Audio Engineer • Sound Designer • Music Producer</p>
 </header>
 
-<section>
+<section id="about">
 
 <h2>About Me</h2>
 <div class="card">
   <p>
-    Audio producer focused on sound design, electronic music production and experimental audio workflows.
-    I create original sounds and immersive sonic experiences using Ableton Live.
+    Audio producer focused on sound design, electronic music production and immersive audio experiences.
+    I work with Ableton Live creating original sounds and experimental sonic textures.
   </p>
 </div>
 
 </section>
 
-<section>
+<section id="music">
 
 <h2>Music Projects</h2>
 
 <div class="card">
-  <p><b>Track 01</b></p>
-  <iframe src="https://w.soundcloud.com/player/?url=YOUR_PRIVATE_SOUND_1&color=%2300ffd5"></iframe>
+  <b>Track 01</b>
+  <p>Experimental / Atmospheric / Psy-inspired</p>
+  <iframe src="https://w.soundcloud.com/player/?url=https://on.soundcloud.com/W76ZdXtMxXkQ3b88hu&color=%2300ffd5"></iframe>
 </div>
 
 <div class="card">
-  <p><b>Track 02</b></p>
-  <iframe src="https://w.soundcloud.com/player/?url=YOUR_PRIVATE_SOUND_2&color=%2300ffd5"></iframe>
+  <b>Track 02</b>
+  <p>Dark / Progressive / Sound Design Focus</p>
+  <iframe src="https://w.soundcloud.com/player/?url=https://on.soundcloud.com/m9jn6C39XWMnInDClG&color=%2300ffd5"></iframe>
 </div>
 
 </section>
 
-<section>
+<section id="sound">
 
-<h2>Sound Design</h2>
+<h2>Sound Design Library</h2>
 
 <div class="card">
-  <p>30+ original sound effects created for music production, film and experimental audio.</p>
+  <b>Curated Sound Design Pack</b>
+  <p>
+    A collection of 30+ original sound effects created in Ableton Live, designed for electronic music production,
+    cinematic use, and experimental audio design. All sounds were crafted from scratch and used in my personal projects.
+  </p>
+
+  <p style="opacity:0.8; font-size:14px;">
+    Includes: impacts • risers • atmospheres • glitches • transitions
+  </p>
+
+  <a href="https://drive.google.com/drive/folders/1lEQoxC4wq4ntfgRES0UV1EQkElauYIUY?usp=sharing" target="_blank"
+     style="
+     display:inline-block;
+     margin-top:15px;
+     padding:12px 18px;
+     background:#00ffd5;
+     color:#000;
+     font-weight:bold;
+     border-radius:10px;
+     text-decoration:none;
+     transition:0.3s;">
+     Access Sound Library
+  </a>
 </div>
 
 </section>
 
-<section>
+<section id="workspace">
 
 <h2>Ableton Workspace</h2>
 
 <div class="card">
-  <p>My production environment:</p>
+  <p>My production environment and workflow inside Ableton Live:</p>
 
-  <img src="img1.jpg">
-  <img src="img2.jpg">
-  <img src="img3.jpg">
-  <img src="img4.jpg">
+<img src="https://i.imgur.com/2KCrT0o.jpg">
+<img src="https://i.imgur.com/ceU2i4o.jpg">
+<img src="https://i.imgur.com/bmTVBIz.jpg">
+<img src="https://i.imgur.com/XHkjNki.jpg">
 </div>
 
 </section>
 
-<section>
-
-<h2>Skills</h2>
-
-<div class="card skills">
-  <span>Ableton Live</span>
-  <span>Sound Design</span>
-  <span>Mixing</span>
-  <span>Audio Editing</span>
-  <span>Synthesis</span>
-</div>
-
-</section>
-
-<section>
+<section id="contact">
 
 <h2>Contact</h2>
 
 <div class="card">
-  <p>LinkedIn: YOUR LINK</p>
-  <p>Email: YOUR EMAIL</p>
+  <p>
+LinkedIn: 
+<a href="https://www.linkedin.com/in/norton-silva-77b0ab246/" target="_blank" style="color:#00ffd5;">
+View Profile
+</a>
+</p>
+  <p>Email: antivirus.live00@gmail.com</p>
 </div>
 
 </section>
 
 <footer>
-© 2026 Your Name
+© 2026 Audio Portfolio
 </footer>
 
 </body>
