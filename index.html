@@ -85,11 +85,11 @@ h2 {
   border-color: rgba(0,255,213,0.3);
 }
 
-/* SOUND CLOUD */
+/* SPOTIFY PLAYER */
 iframe {
   width: 100%;
-  height: 166px;
-  border-radius: 10px;
+  height: 352px;
+  border-radius: 12px;
   margin-top: 10px;
 }
 
@@ -106,6 +106,8 @@ iframe {
 /* IMAGES */
 img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
   margin-top: 10px;
 }
@@ -116,11 +118,8 @@ footer {
   padding: 40px;
   opacity: 0.5;
 }
-  img {
-  max-width: 100%;
-  height: auto;
-}
-  html {
+
+html {
   scroll-behavior: smooth;
 }
 </style>
@@ -139,7 +138,7 @@ footer {
 
 <header>
   <h1>Norton Silva aka ANTIVIRUS LIVE</h1>
-<p style="opacity:0.6;">
+  <p style="opacity:0.6;">
 Available for Remote Audio AI Training • Sound Design • Music Production
 </p>
   <p class="subtitle">Audio Engineer • Sound Designer • Music Producer</p>
@@ -162,15 +161,16 @@ Available for Remote Audio AI Training • Sound Design • Music Production
 <h2>Music Projects</h2>
 
 <div class="card">
-  <b>Track 01</b>
-  <p>Experimental / Atmospheric / Psy-inspired</p>
-  <iframe src="https://w.soundcloud.com/player/?url=https://soundcloud.com/antiviruslive/antivirus-there-is-insane?si=c3448001d42d4ac0842fdc1a60d0408a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing&color=%2300ffd5"></iframe>
-</div>
+  <b>Spotify Playlist</b>
+  <p>Experimental / Atmospheric / Psy / Dark Electronic Selection</p>
 
-<div class="card">
-  <b>Track 02</b>
-  <p>Dark / Progressive / Sound Design Focus</p>
-  <iframe src="https://w.soundcloud.com/player/?url=https://soundcloud.com/antiviruslive/antivirus-the-crow?si=58e7d3a51f8a42768811a70a8e7475cd&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing&color=%2300ffd5"></iframe>
+  <iframe style="border-radius:12px"
+    src="https://open.spotify.com/embed/playlist/0OOBUMNlX6HpesTsznlWgp"
+    width="100%" 
+    height="352" 
+    frameborder="0" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+  </iframe>
 </div>
 
 </section>
@@ -199,8 +199,7 @@ Available for Remote Audio AI Training • Sound Design • Music Production
      color:#000;
      font-weight:bold;
      border-radius:10px;
-     text-decoration:none;
-     transition:0.3s;">
+     text-decoration:none;">
      Access Sound Library
   </a>
 </div>
